@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/cheesenibbles123/BlazingSailsHandler#readme",
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^2.6.1"
   }
 }
