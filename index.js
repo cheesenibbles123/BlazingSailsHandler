@@ -9,7 +9,7 @@ exports.init = function init(newApiKey){
 	apiKey = newApiKey;
 }
 
-exports.query = async function query(type,steamID) => {
+exports.query = async function query(type,steamID){
 	if (checkIfPublic(steamID)){
 
 		getStats(steamID).then(playerStats => {
