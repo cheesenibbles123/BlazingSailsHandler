@@ -9,11 +9,11 @@ module.exports = {
 	init: (newApiKey) => {
 		apiKey = newApiKey;
 	},
-	query: async (steamID,type) => {
+	query: async (type,steamID) => {
 		if (checkIfPublic(steamID)){
 
 			getStats(steamID).then(playerStats => {
-				
+
 				getDataForType(playerStats,type).then(response => {
 					return generateResponse(true,type,response);
 				}).catch(error => {
