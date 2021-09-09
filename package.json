@@ -1,0 +1,22 @@
+{
+  "name": "blazingsailshandler",
+  "version": "1.0.0",
+  "description": "Simple steamapi wrapper to get blazing sails information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheesenibbles123/BlazingSailsHandler.git"
+  },
+  "author": "Cheesenibbles123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheesenibbles123/BlazingSailsHandler/issues"
+  },
+  "homepage": "https://github.com/cheesenibbles123/BlazingSailsHandler#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
