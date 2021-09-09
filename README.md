@@ -7,7 +7,7 @@ Welcome to the git repo of the Blazing Sails Handler. This package simply server
 ## Installation
 
 ```bash
-npm install @cheesenibbles123/blackwakehandler
+npm i blazingsailshandler
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install @cheesenibbles123/blackwakehandler
 To use the package the following template is required:
 
 ```js
-const blazingSailsHandler = require("@cheesenibbles123/BlazingSailsHandler");
+const blazingSailsHandler = require("blazingsailshandler");
 
 blazingSailsHandler.init("Your Steam API key here");
 
@@ -30,7 +30,7 @@ const data = await blazingSailsHandler.query(Type_ID, 'steamID64');
 const Discord = rqeuire("discord.js");
 const client = new Discord.Client();
 
-const bsHandler = require("@cheesenibbles123/BlazingSailsHandler");
+const bsHandler = require("blazingsailshandler");
 const config = require("./config.json");
 
 client.on('ready', () => {
