@@ -14,7 +14,7 @@ module.exports = {
 					if (achievement.achieved === 1){
 						returnData.count += 1;
 						returnData.listRaw.push(achievement.name)
-						returnData.listFormatted.push(achievement[achievement.name]);
+						returnData.listFormatted.push(achievements[achievement.name]);
 					}
 				});
 
