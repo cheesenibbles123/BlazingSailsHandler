@@ -5,4 +5,6 @@ module.exports = {
 	ACH_DISCOVER_TEMPLECLUSTER : "Hell Is A Merrier Place",
 	ACH_CUSTOMIZE_SHIP : "Part Of The Ship",
 	ACH_CUSTOMIZE_CHARACTER : "More Than An Eyepatch",
+	ACH_PREMADE_CREW : "Part Of The Crew",
+	ACH_REFERENCE_CASTAWAY : "I Thought I Lost You",
 }
