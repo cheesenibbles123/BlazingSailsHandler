@@ -5,29 +5,28 @@ const dataSorter = require("./sortDataForTypes");
 
 let apiKey;
 
-module.exports = {
-	init: (newApiKey) => {
-		apiKey = newApiKey;
-	},
-	query: async (type,steamID) => {
-		if (checkIfPublic(steamID)){
+exports.init = function init(newApiKey){
+	apiKey = newApiKey;
+}
 
-			getStats(steamID).then(playerStats => {
+exports.query = async function query(type,steamID) => {
+	if (checkIfPublic(steamID)){
 
-				getDataForType(playerStats,type).then(response => {
-					return generateResponse(true,type,response);
-				}).catch(error => {
-					return generateResponse(false,type,error);
-				});
+		getStats(steamID).then(playerStats => {
 
+			getDataForType(playerStats,type).then(response => {
+				return generateResponse(true,type,response);
 			}).catch(error => {
-
 				return generateResponse(false,type,error);
-			})
+			});
 
-		}else{
-			return generateResponse(false,type,"Private profile.");
-		}
+		}).catch(error => {
+
+			return generateResponse(false,type,error);
+		})
+
+	}else{
+		return generateResponse(false,type,"Private profile.");
 	}
 }
 
